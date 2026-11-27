@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kritéria a tipy – LLM Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-vnitr">
+        <a class="znacka" href="/">LLM Calculator</a>
+        <ul>
+          <li><a href="/">Úvod</a></li>
+          <li><a class="aktivni" href="/kriterie">Kritéria a tipy</a></li>
+          <li><a href="srovnani">Srovnání modelů</a></li>
+          <li><a href="analyzator">Analyzátor promptu</a></li>
+          <li><a href="metodika">Metodika a kontakt</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="obal">
+      <header>
+        <h1>Kritéria a tipy</h1>
+        <p>Kdy stačí rychlý model a kdy už se vyplatí silnější.</p>
+      </header>
+
+      <main>
+        <h2>Kdy který model</h2>
+
+        <h3>Rychlý model</h3>
+        <p>
+          Krátká a jasná věc. Překlad jedné věty, oprava pravopisu, převyprávění
+          odstavce nebo odpověď na jednu otázku. Není tam víc kroků a výsledek
+          nemusí být tabulka.
+        </p>
+
+        <h3>Reasoning a analýza</h3>
+        <p>
+          Když má model porovnat, spočítat, rozhodnout nebo si dát pozor na
+          přesnost. Třeba tři nabídky, delší text, nebo úkol, kde záleží na tom,
+          aby si nic nevymyslel. Hodí se i větší kontext.
+        </p>
+
+        <h3>Kód a multimodalita</h3>
+        <p>
+          Programování, hledání chyby v kódu, nebo zadání, kde je i obrázek,
+          snímek obrazovky či soubor. Rychlý textový model na to často nestačí.
+        </p>
+
+        <h2>Jak zadání upravit</h2>
+        <ol>
+          <li>Napiš, co má být na konci. Věta, seznam, nebo tabulka.</li>
+          <li>Doplň omezení: jazyk, délka, co do výstupu nepatří.</li>
+          <li>Když je kroků víc, očísluj je. Model je pak bere po pořadí.</li>
+          <li>U strukturovaného výstupu přidej krátký příklad.</li>
+          <li>
+            U faktů napiš, ať oddělí jisté věci od těch, kde si není jistý.
+          </li>
+        </ol>
+
+        <h2>Znaky náročného promptu</h2>
+        <ul>
+          <li>Dlouhý text nebo hodně podkladů najednou.</li>
+          <li>Více kroků, které na sobě závisí.</li>
+          <li>Důraz na přesnost, zdroje nebo kontrolu chyb.</li>
+          <li>Pevný tvar výstupu: tabulka, JSON, dané sloupce.</li>
+          <li>Kód, obrázek, nebo víc druhů vstupu v jednom zadání.</li>
+        </ul>
+      </main>
+
+      <footer>
+        <p>
+          LLM Calculator, experimentální nástroj.
+          <br />
+          <a href="https://nikolacrhak.cz">nikolacrhak.cz</a>
+        </p>
+      </footer>
+    </div>
+
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>
