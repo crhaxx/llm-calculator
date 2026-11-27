@@ -4,9 +4,76 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LLM Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <script src="js/script.js"></script>
+    <nav>
+      <div class="nav-vnitr">
+        <a class="znacka" href="/">LLM Calculator</a>
+        <ul>
+          <li><a class="aktivni" href="/">Úvod</a></li>
+          <li><a href="kriteria">Kritéria a tipy</a></li>
+          <li><a href="srovnani">Srovnání modelů</a></li>
+          <li><a href="analyzator">Analyzátor promptu</a></li>
+          <li><a href="metodika">Metodika a kontakt</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="obal">
+      <header>
+        <h1>LLM Calculator</h1>
+        <p>Podle složitosti zadání vybere typ modelu, který se na něj hodí.</p>
+      </header>
+
+      <main>
+        <h2>O co jde</h2>
+        <p>
+          Na všechno se nemusí brát stejný model. Krátká otázka, třeba překlad
+          jedné věty, zvládne rychlý model. Delší zadání s víc kroky, požadavkem
+          na přesnost nebo s tabulkou na výstupu už chce silnější model.
+        </p>
+        <p>
+          Stránka se dívá na délku textu, slova v zadání a typ úkolu. Z toho
+          spočítá skóre složitosti a napíše, jaká třída modelu dává smysl, proč,
+          a jak je úkol náročný.
+        </p>
+
+        <h2>Ukázky situací</h2>
+        <div class="ukazky">
+          <div class="ukazka">
+            <h3>Krátké zadání</h3>
+            <p>
+              „Přelož tuhle větu do angličtiny.“ Jeden krok, málo textu.
+              <br />
+              Stačí rychlý model.
+            </p>
+          </div>
+          <div class="ukazka">
+            <h3>Náročnější zadání</h3>
+            <p>
+              „Porovnej tři nabídky, spočítej náklady a výsledek dej do
+              tabulky.“ Víc kroků a přesný výstup. Lepší je silnější model.
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <p>
+          LLM Calculator, experimentální nástroj.
+          <br />
+          <a href="https://nikolacrhak.cz">nikolacrhak.cz</a>
+        </p>
+      </footer>
+    </div>
+
+    <script src="scripts/script.js"></script>
   </body>
 </html>
