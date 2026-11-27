@@ -153,6 +153,11 @@ main li {
   margin-bottom: 6px;
 }
 
+main li span {
+  color: #10171e;
+  font-weight: 600;
+}
+
 .ukazky {
   display: flex;
   flex-wrap: wrap;

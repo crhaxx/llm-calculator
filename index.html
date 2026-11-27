@@ -29,21 +29,56 @@
     <div id="obal">
       <header>
         <h1>LLM Calculator</h1>
-        <p>Podle složitosti zadání vybere typ modelu, který se na něj hodí.</p>
+        <p>
+          Podle složitosti zadání vybere konkrétní model, který se na něj hodí.
+        </p>
       </header>
 
       <main>
         <h2>O co jde</h2>
         <p>
           Na všechno se nemusí brát stejný model. Krátká otázka, třeba překlad
-          jedné věty, zvládne rychlý model. Delší zadání s víc kroky, požadavkem
-          na přesnost nebo s tabulkou na výstupu už chce silnější model.
+          jedné věty, zvládne levný model. Delší zadání s víc kroky, požadavkem
+          na přesnost nebo s tabulkou na výstupu už chce silnější a dražší
+          model. Ušetřete čas a peníze s LLM Calculator.
         </p>
         <p>
-          Stránka se dívá na délku textu, slova v zadání a typ úkolu. Z toho
-          spočítá skóre složitosti a napíše, jaká třída modelu dává smysl, proč,
-          a jak je úkol náročný.
+          Stránka se přijme váš prompt a z něho vypočítá skóre složitosti a
+          napíše konkrétní model, proč právě ten, a jak je úkol náročný. Je
+          možné vybrat i vlastní model.
         </p>
+
+        <ul>
+          <li>
+            <span>Claude Haiku 5.5</span> od Anthropic. Levný a rychlý, na
+            překlad, pravopis a jednu otázku.
+          </li>
+          <li>
+            <span>GPT-6 Luna</span> od OpenAI. Stejně levný, když je drobných
+            úkolů hodně.
+          </li>
+          <li>
+            <span>Gemini 3.8 Flash</span> od Googlu. Levný model na krátké
+            shrnutí a jednoduchý obrázek.
+          </li>
+          <li>
+            <span>GPT-6.2 Sol</span> od OpenAI. Běžná práce, slušný výkon za
+            rozumnou cenu.
+          </li>
+          <li>
+            <span>Claude Opus 5.5</span> od Anthropic. Analýza a úkoly, kde
+            záleží na přesnosti.
+          </li>
+          <li>
+            <span>Claude Fable 5.2</span> od Anthropic. Nejdražší. Nejdelší a
+            nejtěžší zadání.
+          </li>
+          <li>
+            <span>Llama 4 Maverick</span> od Mety. Otevřený model na delší
+            dokument a snímek obrazovky, provoz vyjde levně.
+          </li>
+          <li><span>Grok 4.7</span> od xAI. Kód a technická zadání.</li>
+        </ul>
 
         <h2>Ukázky situací</h2>
         <div class="ukazky">
@@ -52,14 +87,14 @@
             <p>
               „Přelož tuhle větu do angličtiny.“ Jeden krok, málo textu.
               <br />
-              Stačí rychlý model.
+              Stačí Claude Haiku 5.5.
             </p>
           </div>
           <div class="ukazka">
             <h3>Náročnější zadání</h3>
             <p>
               „Porovnej tři nabídky, spočítej náklady a výsledek dej do
-              tabulky.“ Víc kroků a přesný výstup. Lepší je silnější model.
+              tabulky.“ Víc kroků a přesný výstup. Lepší je Claude Opus 5.5.
             </p>
           </div>
         </div>
